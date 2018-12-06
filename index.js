@@ -41,3 +41,10 @@ var previousButton = document.getElementById("previous");
 
 previousButton.addEventListener("click",back,false);
 nextButton.addEventListener("click",next,false); 
+function autoSlide(){
+if (document.getElementById("auto").checked)
+ next(); 
+}
+
+
+setInterval(autoSlide,2000); // Next
